@@ -1,11 +1,12 @@
-package modelo.entities;
+package model.entities;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Department implements Serializable {
-
+	
 	private static final long serialVersionUID = 1L;
+	
 	private Integer id;
 	private String name;
 	
@@ -34,6 +35,7 @@ public class Department implements Serializable {
 		this.name = name;
 	}
 
+			
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -55,7 +57,5 @@ public class Department implements Serializable {
 	public String toString() {
 		return "Department [id=" + id + ", name=" + name + "]";
 	}
-	
-	
 	
 }
